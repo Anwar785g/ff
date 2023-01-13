@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+
+# Anfangsgeschwindigkeiten
+
+v_Igel = 10 # m/s
+
+v_Hase = 20 # m/s
+
+# Zeiten
+
+t_Igel = 60 # s
+
+t_Hase = 70 # s
+
+# Berechne die Positionen des Igels und des Hasen
+
+x_Igel = [v_Igel * i for i in range(t_Igel)]
+
+x_Hase = [v_Hase * i for i in range(t_Hase)]
+
+# Erstelle das Diagramm
+
+plt.plot(range(t_Igel), x_Igel, label="Igel")
+
+plt.plot(range(t_Hase), x_Hase, label="Hase")
+
+plt.xlabel("Zeit (s)")
+
+plt.ylabel("Position (m)")
+
+plt.legend()
+
+plt.show()
